@@ -1,3 +1,13 @@
+# DreamBill
+DreamBill is a landing page built with Next.js, Tailwind CSS and Ant Design library that aims to simplify your billing process. With DreamBill, you can easily create and manage your invoices, track your payments, and get a clear overview of your expenses.
+
+<h1>Technologies used:</h1>
+      Next JS<br/>
+      TypeScript<br/>
+      TailwindCSS<br/>
+      ant design library <br/>
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
