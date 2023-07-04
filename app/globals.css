@@ -2,26 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+  .infoText {
+    @apply p-4 bg-gray-700/50 rounded-lg max-w-[300px];
+  }
+  .chatRow {
+    @apply rounded-lg px-5 py-3 text-sm flex items-center justify-center space-x-2 hover:bg-gray-700/70 cursor-pointer text-gray-300 transition-all duration-200 ease-out;
+  }
+  .nav-item {
+    @apply text-[#085C60] text-lg leading-6 font-semibold cursor-pointer;
+  }
+
+  .footer-nav-item {
+    @apply flex items-center justify-center w-12 h-12 shrink-0 rounded-lg bg-[#e6efef];
+  }
+
+  .footer-nav-link {
+    @apply text-[#556F71] text-[0.75rem] font-[400] leading-[1.125rem];
+  }
+
+  .service-item {
+    @apply flex flex-col items-start min-w-[15.23438rem] h-[6.75rem];
+  }
+
+  .contact-form-info {
+    @apply flex gap-[1.56rem];
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.nav {
+  border-radius: 2.6875rem;
+  background: #fff;
+  box-shadow: 0px 4px 16px 0px rgba(8, 92, 96, 0.25);
+}
+
+.text-card {
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card-box {
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
 }
